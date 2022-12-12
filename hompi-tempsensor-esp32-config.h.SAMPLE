@@ -1,0 +1,30 @@
+#ifndef HompiTempSensorESP32Config_h
+#define HompiTempSensorESP32Config_h
+
+#define debug
+
+// NTP server
+const char* ntpServer = "pool.ntp.org";
+const long gmtOffset_sec = 3600;
+const int  daylightOffset_sec = 0;
+
+// Sensor type
+const char* SENSOR_TYPE = "temperature";
+
+// Sensor data
+const char* SENSOR_NAME = "temp_sensor1";
+const char* SENSOR_DESC = "Upstairs";
+
+// WiFi config
+const char* WIFI_SSID = "";
+const char* WIFI_PASSWORD = "";
+
+// DS18B20 wiring
+const int TEMP_BUS = 4;
+
+// LCD1306 wiring
+const uint8_t LCD_ADDRESS = 0x3c;
+const int LCD_SDA = 21;
+const int LCD_SCL = 15;
+
+#endif
